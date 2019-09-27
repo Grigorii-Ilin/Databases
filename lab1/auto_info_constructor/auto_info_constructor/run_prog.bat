@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_86\python.exe" auto_info_constructor.py
