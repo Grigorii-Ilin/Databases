@@ -139,9 +139,13 @@ def get_agreement_number():
     def get_number_part():
         return str(random.randint(1,1000))
 
-    agreement_number = get_number_part() 
+    agreement_number = ""
+    rnd = random.random()
 
-    if random.random() >= 0.5:
+    if rnd >= 0.33:
+        agreement_number+=get_number_part() 
+
+    if  rnd >= 0.66:
         agreement_number+= "/" + get_number_part()
 
     return agreement_number
@@ -183,6 +187,8 @@ def get_agreements(rows_count, subjects_of_agreements_counts):
     for i in range(rows_count):
         agreements.append([])
         a = agreements[i]
+
+        a.append(get_id(i))
 
         for j in range(3):
             """

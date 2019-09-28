@@ -1,7 +1,7 @@
 USE [master]
 GO
 
-IF EXISTS(SELECT name FROM sys.databases WHERE name=N'notary_agreements')
+IF EXISTS (SELECT name FROM sys.databases WHERE name=N'notary_agreements')
 DROP DATABASE [notary_agreements] 
 GO
 
@@ -39,6 +39,7 @@ CREATE TABLE [Notaries](
 GO
 
 CREATE TABLE [Agreements](
+[AgreementID] [int] IDENTITY(1,1) NOT NULL,
 [SellerID] [int] NOT NULL,
 [BuyerID] [int] NOT NULL,
 [NotaryID] [int] NOT NULL,
