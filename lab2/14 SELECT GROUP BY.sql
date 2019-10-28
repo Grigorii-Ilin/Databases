@@ -13,6 +13,6 @@ SELECT p.ProductID,
 	MAX(od.UnitPrice) AS MaxPrice
 FROM Products p LEFT OUTER JOIN [Order Details] od ON p.ProductID=od.ProductID
 WHERE CategoryID=2
---GROUP BY p.ProductID, p.UnitPrice, p.ProductName
+GROUP BY p.ProductID, p.UnitPrice, p.ProductName
 
 GO
