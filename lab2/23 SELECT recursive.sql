@@ -14,23 +14,12 @@ CREATE TABLE dbo.[My Employees](
 GO
 
 INSERT INTO dbo.[My Employees] 
-VALUES (10, N'Иван', N'Иванов', N'Гендиректор',1,NULL) ;
-
-INSERT INTO dbo.[My Employees] 
-VALUES (20, N'Петр', N'Петров', N'Зам по финансам',2,10) ;
-
-INSERT INTO dbo.[My Employees] 
-VALUES (30, N'Сидор', N'Сидоров', N'Зам по производству',3,10) ;
-
-INSERT INTO dbo.[My Employees] 
-VALUES (40, N'Александрова', N'Александра', N'Бухгалтер',2,20) ;
-
-INSERT INTO dbo.[My Employees] 
-VALUES (50, N'Максим', N'Максимов', N'Начальник цеха 1',16,30) ;
-
-INSERT INTO dbo.[My Employees] 
-VALUES (60, N'Евгения', N'Евгеньева', N'Начальник цеха 2',17,30) ;
-
+VALUES (10, N'Иван', N'Иванов', N'Гендиректор',1,NULL) ,
+	(20, N'Петр', N'Петров', N'Зам по финансам',2,10) ,
+	(30, N'Сидор', N'Сидоров', N'Зам по производству',3,10) ,
+	(40, N'Александрова', N'Александра', N'Бухгалтер',2,20) ,
+	(50, N'Максим', N'Максимов', N'Начальник цеха 1',16,30) ,
+	(60, N'Евгения', N'Евгеньева', N'Начальник цеха 2',17,30) ;
 GO
 
 WITH DirectReports (ManagedID, EmployeeID, Title, DeptID, lvl)
