@@ -59,7 +59,6 @@ cursor.execute("""
 print("Вставлено строк: ", cursor.rowcount, "\n")
 cnxn.commit()
 
-
 print("Удалить 10% договоров без номеров")
 cursor.execute("""
     DELETE TOP (10) PERCENT
